@@ -2248,7 +2248,11 @@ input, select, textarea {
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/profile_pic.png");
+				background-image: url("../../images/profile_pic.jpg");
+				background-size: 600px 650px;
+				background-repeat:no-repeat;
+				background-position: right;
+				object-fit:cover;
 			}
 
 			#main > section.two {
