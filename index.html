@@ -1,265 +1,160 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Personal Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dheeraj Kukkadapu/Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <main>
+      <!-- ***********************  ABOUT / PROFILE  *********************** -->
+      <header class="header-grid">
+        <div class="header-grid-item">
+          <img src="./images/Dheeraj K.jpg">
+        </div>
+        <div class="content-wrap">
+          <h1>Dheeraj Kukkadapu</h1>
+          <h2>Full Stack Developer</h2>
 
-		<!-- Header -->
-			<div id="header">
+          <p> As a full stack developer I would love to create more scalable products with high performance.</p>
+          <p> As a side hustle I am working as a free lance developer in <a href="https://www.upwork.com/">UpWork</a></p>
+        </div>
+      </header>
 
-				<div class="top">
+      <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
+      <section class="projects">
+        <div class="content-wrap divider">
+          <h2>Featured Projects</h2>
+          <p>View selected projects below. More information can be found at <a href="https://kukkadapudheeraj.github.io">kukkadapudheeraj</a>.</p>
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/Dheeraj K.jpg" alt="" /></span>
-							<h1 id="title">Dheeraj</h1>
-							<p>Full stack developer</p>
-						</div>
+          <!-- Copy the whole <section> block to add more projects. -->
+          <section class="project-item">
+            <a href="https://stripe.com/docs"><img src="./images/Payments-social-card.png" alt="stripe payments image"></a>
+            <h3>Stripe Payment Gateway Integration | NodeJS, Python, MongoDB, SQL</h3>
+            <p>Integrated a stripe SDK with a college management portal to make payment for the courses and fees.
+                Performed end-to-end testing of the entire portal with an automation testing script and built a bug-free environment</p>
+            <a class="btn" href="https://stripe.com/docs">Stripe</a>
+          </section>
+          <section class="project-item">
+            <a href="https://www.startupindia.gov.in/"><img src="./images/startup india.png" alt="start up india network image"></a>
+            <h3>Start-Up India Network | Java script, CSS, Apache</h3>
+            <p> Launched a portal in 36 hours with Java, JavaScript, CSS, and HTML which helps start-ups to communicate and share
+              ideas with investors interested in funding.
+              </p>
+            <a class="btn" href="https://www.startupindia.gov.in/">Startup India</a>
+          </section>
+        </div>
+        <!-- End of Project block. -->
+      </section>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
+      <!-- ***********************  WORK EXPERIENCE  *********************** -->
+      <section class="work-experience">
+        <div class="content-wrap divider">
+          <h2>Work Experience</h2>
+          <!-- <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p> -->
 
-				</div>
+          <!-- Copy this whole <section> block to add more jobs. -->
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Lead Software Developer</h3>
+              <p>Eunimart Omnichannel Private Ltd </p>
+              <p>August 2021 – July 2022</p>
+            </div>
+            <!-- <p>Job summary goes here. Add as many paragraphs as you need.</p>
+            <p>Optional list:</p> -->
+            <div class="job-summary">
+              <ul>
+                <li>Developed a Warehouse Management module end-to-end using microservice architecture for a Multi-Channel eCommerce
+                  platform with a team of 9 software developers and 12 interns.</li>
+                <li>Implemented domain-driven-design to accomplish independent jobs using event action methodology in the modules
+                  related to Order Management, Replenishment Management, Inventory Management, Webstore Management, Audit
+                  Logging, and Report Management.</li>
+                <li>Explored ways to send automation reports regarding monthly audit history to billing management.
+                </li>
+              </ul>
+              <a class="btn" href="https://go.eunimart.com/login">Eunimart</a>
+            </div>
+          </section>
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Software Developer</h3>
+              <p>Eunimart Omnichannel Private Ltd</p>
+              <p>July 2020 – July 2021</p>
+            </div>
+            <!-- <p>Job summary goes here. Add as many paragraphs as you need.</p>
+            <p>Optional list:</p> -->
+            <div class="job-summary">
+              <ul>
+                <li>Utilized AWS Cloud formation to provide a continuous integration service in order to automate the entire process of
+                  loading the latest build code and test files, executing tests, and generating a report once per day.</li>
+                <li>Collaborated with team members in the integration of 15 marketplaces - Amazon, eBay, Lazada, Bonanza, and Logistics
+                  - FedEx, DHL, and Aramex to a multi-channel eCommerce platform.</li>
+              </ul>
+              <a class="btn" href="https://go.eunimart.com/login">Eunimart</a>
+            </div>
+          </section>
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Software Developer Intern</h3>
+              <p>Eunimart Omnichannel Private Ltd</p>
+              <p> June 2019 – June 2020</p>
+            </div>
+            <!-- <p>Job summary goes here. Add as many paragraphs as you need.</p>
+            <p>Optional list:</p> -->
+            <div class="job-summary">
+              <ul>
+                <li>Coordinated with the innovative team and re-architected the multi-channel eCommerce product from monolithic to
+                  microservice architecture.
+                  </li>
+                <li>Designed and Created a two-factor authenticator of product login and worked with OTP and mail generation</li>
+                <li>Generated automation scripts for end-to-end testing of the platform and reported on a daily basis with a scheduler</li>
+              </ul>
+              <a class="btn" href="https://go.eunimart.com/login">Eunimart</a>
+            </div>
+          </section>
+        </div>
+        <!-- End of Job block. -->
+      </section>
 
-				<div class="bottom">
+      <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
+      <section class="education">
+        <div class="content-wrap">
+          <h2>Education</h2>
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
+          <!-- Copy this whole <section> block to add more schools. -->
+          <section>
+            <h3>University At Buffalo - Buffalo, NY</h3>
+            <p>Masters in Computer Science , Aug 2022 – Dec 2023</p>
+            <!-- <p>Summary or accomplishments.</p> -->
+          </section>
+          <section>
+            <h3>K.L University - Vijayawada, India</h3>
+            <p>Bachelors of Science in Computer Science , July 2016 – May 2020</p>
+            <!-- <p>Summary or accomplishments.</p> -->
+          </section>
+        </div>
+        <!-- End of School block. -->
+      </section>
+       
+      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+      <footer>
+        <div class="content-wrap">
+          <h2>Let's Keep in Touch!</h2>
 
-				</div>
-
-			</div>
-
-		<!-- Main -->
-			<div id="main">
-
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
-
-							<header>
-								<h2 class="alt" style="text-align: left;padding-right: 500px;font-style:oblique;">Hi! I'm <strong>Dheeraj</strong>, Nice to meet you !!!.</h2>
-								<p style="text-align: left;padding-right: 500px;">Next few minutes, I will introduce you to my work. Feeling Exited :)</p>
-							</header>
-
-							<footer>
-								<a href="#portfolio" class="button scrolly">Portfolio</a>
-							</footer>
-
-						</div>
-					</section>
-				<!--Education-->
-				<!-- <section id="education" class="two">
-					<div class="container">
-
-						<header>
-							<h2>Portfolio</h2>
-						</header>
-
-						<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-						egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-						Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-						fusce hendrerit lacus ridiculus.</p>
-
-						<div class="row">
-							<div class="col-4 col-12-mobile">
-								<article class="item">
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<header>
-										<h3>Ipsum Feugiat</h3>
-									</header>
-								</article>
-								<article class="item">
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<header>
-										<h3>Rhoncus Semper</h3>
-									</header>
-								</article>
-							</div>
-							<div class="col-4 col-12-mobile">
-								<article class="item">
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<header>
-										<h3>Magna Nullam</h3>
-									</header>
-								</article>
-								<article class="item">
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<header>
-										<h3>Natoque Vitae</h3>
-									</header>
-								</article>
-							</div>
-							<div class="col-4 col-12-mobile">
-								<article class="item">
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<header>
-										<h3>Dolor Penatibus</h3>
-									</header>
-								</article>
-								<article class="item">
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<header>
-										<h3>Orci Convallis</h3>
-									</header>
-								</article>
-							</div>
-						</div>
-
-					</div>	
-				</section> -->
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-
-							<header>
-								<h2>Portfolio</h2>
-							</header>
-
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
-
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Project 1</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Project 2</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>Project 3</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-										<header>
-											<h3>Dolor Penatibus</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article>
-								</div>
-							</div>
-
-						</div>
-					</section>
-
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
-
-							<header>
-								<h2>About Me</h2>
-							</header>
-
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
-
-						</div>
-					</section>
-
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Contact</h2>
-							</header>
-
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
-
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
-
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+          <!-- Social media and contact links. Add or remove any networks. -->
+          <ul class="contact-list">
+            <li><a href="mailto:kukkadapudheeraj@gmail.com">kukkadapudheeraj@gmail.com</a></li>
+            <li><a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a></li>
+            <!-- <li><a href="#" target="_blank">Twitter</a></li> -->
+            <li><a href="https://www.linkedin.com/in/dheerajkukkadapu/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/dheeraj.dheeru.35325/" target="_blank">Facebook</a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>

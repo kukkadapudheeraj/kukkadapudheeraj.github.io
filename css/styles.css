@@ -1,0 +1,260 @@
+
+
+
+
+/*  Global Styles
+---------------------------------------------
+*/
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+a {
+    color: red;
+}
+
+/* this will apply for all links */
+a:link {
+    color: yellow;
+}
+
+/* this will be applied once user visits the link and comes back */
+a:visited {
+    color: gray;
+}
+
+/* this is applied when user focuses on link using tab key not with mouse
+a:focus {
+    outline: 1px solid black;
+} */
+
+/* this will be applies when user hovers on the link */
+a:hover {
+   text-decoration: none;
+}
+
+/* this will be applied when the user clicks on the link and till the movement he releases on the mouse */
+a:active {
+    color: white
+}
+
+body {
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+.divider > section{
+    border-bottom:1px dashed #343434 ;
+    padding: 25px 0;
+}
+
+.divider > section:last-of-type{
+    border-bottom: none;
+}
+
+img {
+    width: 300px;   
+}
+
+img:hover {
+    border: 2px solid purple;
+    border-radius: 8px;
+}
+
+h1{
+    font-size: 100px;
+    line-height: 1;
+}
+
+h1, h2{
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+.education h3 + p,.job-details h3 + p {
+    font-style: italic;
+}
+
+.education h3 ~ p,.job-details h3 ~ p {
+    margin-bottom: 0;
+}
+
+/* .grid-body{
+    display: grid;
+    grid-template-columns: 301px repeat(2,2fr);
+} */
+
+/* 
+.sidebar{
+    background-color: #2F3061;
+    
+} */
+
+
+/*  Profile Section
+----------------------------------------------------------
+ */
+ header {
+    /* background: #2F3061; */
+    background-image: url(../images/tom-morel-ktVazL5c7FM-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    color: #F7FFF7 ;   
+}
+
+.header-grid{
+    display:grid;
+    grid-template-columns: 3fr 8fr;
+}
+
+.header-grid img{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    display: grid;
+}
+
+/*  Projects Section
+----------------------------------------------------------
+ */
+
+.project-item h3{
+    margin-top: 0;
+}
+
+.project-item{
+    overflow: hidden;
+}
+.projects {
+    background: #F7FFF7;
+}
+
+.projects a {
+    color: #2F3061;
+}
+
+.projects .btn {
+    color: #F7FFF7;
+    background: #2F3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.projects a:hover {
+    background: rgba(47,48,97,80%);
+}
+
+
+ /*  Work Experience Section
+----------------------------------------------------------
+ */
+
+.work-experience {
+    background-image: url(../images/annie-spratt-unsplash.jpg);
+}
+
+
+ /*  Education Section
+----------------------------------------------------------
+ */
+
+ .education {
+    background-image: url(../images/joanna-kosinska-unsplash.jpg) ;
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+ }
+
+ .education p{
+    width: 60%;
+ }
+
+
+
+
+/*  Contact Info Section
+----------------------------------------------------------
+ */
+
+ footer {
+    background: #343434;
+    color: #F7FFF7 ;
+ }
+
+ .contact-list{
+    list-style-type: none;
+    padding: 0;
+ }
+
+ 
+
+ /* Responsive Query 
+ --------------------------------------------------*/
+
+ @media screen and (min-width: 750px) {
+    header,footer{
+        text-align: center;
+    }
+
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .job-item{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+
+    .contact-list{
+        display:flex;
+        justify-content: center;
+    }
+
+    .contact-list a{
+        padding: 5px;
+    } 
+    
+ }
+
+ @media screen and (max-width:749px){
+    h1{
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    h2{
+        line-height: 1;
+    }
+ }
